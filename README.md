@@ -6,6 +6,31 @@ A real-time interactive fractal viewer built with Python, Numba JIT, and Pygame.
 
 ---
 
+## Setup & Run (All Methods)
+
+### Method 1 -- Direct run with Python 3.12 (recommended)
+```bash
+py -3.12 -m pip install numpy numba pygame matplotlib
+py -3.12 fractal_explorer.py
+```
+
+### Method 2 -- Virtual environment
+```bash
+py -3.12 -m venv venv
+venv\Scriptsctivate
+pip install numpy numba pygame matplotlib
+python fractal_explorer.py
+```
+
+### Method 3 -- If python3.12 is your default python
+```bash
+pip install numpy numba pygame matplotlib
+python fractal_explorer.py
+```
+
+> First launch takes 10-20 seconds to JIT-compile the kernels. Subsequent launches are instant due to `cache=True`.
+
+
 ## Features
 
 - 5 fractals: Mandelbrot, Julia, Burning Ship, Tricorn, Newton (z^3 - 1)
